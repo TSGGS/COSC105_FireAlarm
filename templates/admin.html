@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <script src="./../static/js/admin.js" defer>
+    </script>
+    <title>Fire Alarm</title>
+</head>
+<body>
+    <form action="/admin" method="post">
+        <div class="threshold-control">
+            <span>
+                <label for="light-threshold">Light:</label>
+            </span>
+            <input type="range" name="light-threshold" id="light-threshold" value="0.5" min="0" max="1" step="0.01">
+            <span id="light-threshold-value">0.50</span>
+        </div>
+        <div class="threshold-control">
+            <span>
+                <label for="heat-threshold">Heat:</label>
+            </span>
+            <input type="range" name="heat-threshold" id="heat-threshold" value="0.5" min="0" max="1" step="0.01">
+            <span id="heat-threshold-value">0.50</span>
+        </div>
+        <div class="threshold-control">
+            <span>
+                <label for="smoke-threshold">Smoke:</label>
+            </span>
+            <input type="range" name="smoke-threshold" id="smoke-threshold" value="0.5" min="0" max="1" step="0.01">
+            <span id="smoke-threshold-value">0.50</span>
+        </div>
+    </form>
+    <span>
+        <button id="apply-threshold" disabled>Apply</button>
+        <span id="apply-msg"></span>
+    </span>
+</body>
+</html>

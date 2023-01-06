@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;    
+    user-select: none;
+}
+
+#fire-controls {
+    margin: 1vh 1vw;
+}
+
+#index-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#light-threshold, #heat-threshold, #smoke-threshold {
+    border: none;
+    outline: none;
+}
+
+#main {
+    width: 75vw;
+    height: 100vh;
+}
+
+#sidebar {
+    background-color: lightgray;
+    width: 25vw;
+    height: 100vh;
+}
+
+#fire-control-row label {
+    display: inline-block;
+    width: 15%;
+}
+
+#fire-control-row input {
+    display: inline-block;
+    width: 73%;
+}
+
+.threshold-control span{
+    display: inline-block;
+    width: 3.5%;
+}
