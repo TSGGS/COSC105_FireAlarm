@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <script src="./../static/js/classes/Fire.js" defer></script>
+    <script src="./../static/js/classes/FireAlarm.js" defer></script>
+    <script src="./../static/js/index.js" defer></script>
+    <title>Fire Alarm Simulator</title>
+</head>
+<body>
+    <div id="index-content">
+        <div id="main">
+            <div id="building">
+                <div class="window" id="r55">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r54">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r53">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r52">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r51">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r45">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r44">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r43">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r42">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r41">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r35">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r34">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r33">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r32">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r31">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r25">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r24">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r23">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r22">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r21">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r15">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r14">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r13">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r12">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+                <div class="window" id="r11">
+                    <div class="smoke hidden"></div>
+                    <div class="fire hidden"></div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="fire-controls">
+                <div>
+                    <span><b>Selected Room:</b></span>
+                    <span id="selected-room">XX</span>
+                </div>
+                <br>
+                <span><b>FIRE CONTROLS</b></span>
+                <div id="fire-control-row"><br>
+                    <label for="fire-control-light"><b>Light:</b></label>
+                    <input type="range" name="fire-control-light" id="fire-control-light" value="0" min="0" max="1" step="0.01">
+                    <span id="light-control-value">0.00</span>
+                </div>
+                <div id="fire-control-row">
+                    <label for="fire-control-heat"><b>Heat:</b> </label>
+                    <input type="range" name="fire-control-heat" id="fire-control-heat" value="0" min="0" max="1" step="0.01">
+                    <span id="heat-control-value">0.00</span>
+                </div>
+                <div id="fire-control-row">
+                    <label for="fire-control-smoke"><b>Smoke:</b></label>
+                    <input type="range" name="fire-control-smoke" id="fire-control-smoke" value="0" min="0" max="1" step="0.01">
+                    <span id="smoke-control-value">0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

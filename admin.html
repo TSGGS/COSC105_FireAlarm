@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <script src="./../static/js/admin.js" defer>
+    </script>
+    <title>Fire Alarm</title>
+</head>
+<body>
+    <form action="/admin" method="post">
+    <div class = "main-threshold">
+        <h1><b><center>ADMIN</center></b></h1><br>
+        <div class="threshold-control">
+            <span>
+                 <label for="light-threshold"><b>Light:</b></label>
+            </span>
+            <input type="range" name="light-threshold" id="light-threshold" value="0.5" min="0" max="1" step="0.01">
+            <span id="light-threshold-value">0.50</span>
+        </div>
+        <div class="threshold-control">
+             <span>
+                <label for="heat-threshold"><b>Heat:</b></label>
+            </span>
+            <input type="range" name="heat-threshold" id="heat-threshold" value="0.5" min="0" max="1" step="0.01">
+            <span id="heat-threshold-value">0.50</span>
+        </div>
+        <div class="threshold-control">
+            <span>
+                <label for="smoke-threshold"><b>Smoke:</b></label>
+            </span>
+            <input type="range" name="smoke-threshold" id="smoke-threshold" value="0.5" min="0" max="1" step="0.01">
+            <span id="smoke-threshold-value">0.50</span>
+        </div>
+    </form>
+        <div class = "apply">
+            <span>
+                <button id="apply-threshold" disabled><b>Apply</b></button>
+                <span id="apply-msg"></span>
+            </span>
+        </div>
+    </div>    
+    <div class = "admin2">
+        <br><h1><center><b><p style="color: white">STATUS: NO FIRE</b></center></h1></p>
+        <br></div>
+    <div class = "admin3">
+        <br>
+        <center>
+            <h1><b><p style="color: orange">CAVITE HOTLINES:</b></h1></p><br>
+            <h2><p><b>IMUS: (046) 970 5161 / 09667059174</b></p><br>
+            <p><b>BACOOR: (046) 471-6060 / 09666959711</b></p><br>
+            <p><b>DASMARIÑAS: 416-0875 / 424-2537 / 09953369534</b></p><br>
+            <p><b>KAWIT: (046) 484-5250 / 09661320605</b></p><br>
+            <p><b>NOVELETA: (046) 438-5684 / 09175473696</b></p><br></h2>
+            <p>ALL RIGHTS RESERVED 2023</p>
+        </center>
+    </div>
+</body>
+</html>
