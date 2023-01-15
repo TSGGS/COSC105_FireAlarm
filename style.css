@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;    
+    user-select: none;
+}
+
+#fire-controls {
+    margin: 2vh 1vw;
+}
+
+#index-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#light-threshold, #heat-threshold, #smoke-threshold {
+    border: none;
+    outline: none;
+}
+
+#main {
+    width: 75vw;
+    height: 100vh;
+}
+
+#sidebar {
+    background-color: khaki;
+    width: 25vw;
+    height: 98vh;
+    border: 4px solid black;
+}
+
+#fire-control-row label {
+    display: inline-block;
+    width: 15%;
+}
+
+#fire-control-row input {
+    display: inline-block;
+    width: 85%;
+}
+
+.threshold-control span{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 500px;
+}
+
+.threshold-control label{
+    margin-left: 480px;
+}
+
+.main-threshold { 
+    background-color: khaki;
+    width: 100vw;
+    height: 30vh;
+    margin: auto;
+}
+
+#apply-threshold {
+    background-color: white;
+    margin-left: 10px;
+    width:250px;
+    height: 30px;
+}
+
+.apply {
+    border: black;
+    margin-left: 550px;
+    
+}
+
+.Admin {
+    background-color: black;
+}
+
+.admin2 { 
+    background-color: rgb(114, 66, 66);
+    height: 10vh;
+
+}
+
+.admin3 { 
+    background-color: gray;
+    height: 60vh;
+}
+
+#building {
+    height: 98vh;
+    width: 50vw;
+    border: 6px solid black;
+    background-color: whitesmoke;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.window {
+    height: 15vh;
+    width: 6vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: yellow;
+    border: 3px solid black;
+    position: relative;
+}
+
+/* FIRE */
+@keyframes flicker {
+    0% {transform: rotate(-1deg);}
+    20% {transform: rotate(2deg) scaleY(1.05);}
+    40% {transform: rotate(-1deg);}
+    60% {transform: rotate(1deg);}
+    80% {transform: rotate(-1deg) scaleY(0.90);}
+    100% {transform: rotate(1deg);}
+}
+
+.fire {
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.smoke {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 127, 127, 0.6);
+    box-shadow: 0 0 25px 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
